@@ -10,19 +10,22 @@ class ProductItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Container(
-            width: 80,
-            height: 80,
-            decoration: const BoxDecoration(
-                color: Color(0xFFeaf7f0),
-                borderRadius: BorderRadius.all(Radius.circular(10))),
-            child: Padding(
-              padding: const EdgeInsets.all(18.0),
-              child: Image.asset(
-                product.image,
-                // fit: BoxFit.cover,
-              ),
-            )),
+        Padding(
+          padding: const EdgeInsets.only(left: 14.0, right: 14, bottom: 5),
+          child: Container(
+              width: 80,
+              height: 80,
+              decoration: const BoxDecoration(
+                  color: Color(0xFFeaf7f0),
+                  borderRadius: BorderRadius.all(Radius.circular(10))),
+              child: Padding(
+                padding: const EdgeInsets.all(18.0),
+                child: Image.asset(
+                  product.image,
+                  // fit: BoxFit.cover,
+                ),
+              )),
+        ),
         Text(product.title,
             style: const TextStyle(
                 fontSize: 12,
