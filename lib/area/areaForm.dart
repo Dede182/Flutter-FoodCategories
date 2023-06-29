@@ -1,7 +1,10 @@
+import 'package:basic/area/areaUi.dart';
 import 'package:flutter/material.dart';
-import 'nametextfield.dart';
 
-class formtest extends StatelessWidget {
+class AreaForm extends StatelessWidget {
+  calculateArea({required double width, required double height}) =>
+      print(width * height);
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -11,15 +14,9 @@ class formtest extends StatelessWidget {
         appBar: AppBar(title: Text("Form test")),
         body: Column(
           children: [
-            NameTextField(
-              labelText: "UserName",
-              onButtonClick: printInfo,
-            ),
-            NameTextField(
-              labelDisplay: false,
-              onButtonClick: printInfo,
-              buttonText: "hi",
-            ),
+            AreaUi(
+              calculateArea: calculateArea,
+            )
           ],
         ));
   }

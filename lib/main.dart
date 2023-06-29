@@ -1,12 +1,15 @@
-import 'package:basic/formtest.dart';
-import 'package:basic/homework.dart';
-import 'package:basic/homeworktwo.dart';
+import 'package:basic/area/areaForm.dart';
+import 'package:basic/task/taskform.dart';
+// import 'package:basic/formtest.dart';
+// import 'package:basic/homework.dart';
+// import 'package:basic/homeworktwo.dart';
 
 import 'layouttest.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(MaterialApp(home: HwTwo()));
+// void main() => runApp(MaterialApp(home: AreaForm()));
+void main() => runApp(MaterialApp(home: TaskForm()));
 
 // class MyApp extends StatelessWidget {
 //   build(BuildContext context) {
